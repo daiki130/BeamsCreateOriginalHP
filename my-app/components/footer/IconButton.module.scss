@@ -28,19 +28,24 @@
       transform: scale(0);
     }
   }
-  & .IconButton {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: black;
-    line-height: 40px;
-    width: 70%;
-    &:hover {
-      color: white;
-    }
+}
+.IconButtonA {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.IconButton {
+  color: black;
+  line-height: 40px;
+  margin: auto auto;
+  padding: 10px;
+  &:hover {
+    color: white;
   }
 }
-
 .faFacebook_style {
   background-color: royalblue;
 }
