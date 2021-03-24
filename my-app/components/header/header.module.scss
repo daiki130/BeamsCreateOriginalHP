@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  min-height: 100vh;
   & nav {
     display: grid;
     grid-template-columns: 10% 1fr 5% 10% 5% 10% 5% 10% 5% 10% 5%;
@@ -95,9 +96,10 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10%;
-    bottom: 10%;
+    top: 0;
+    bottom: 0;
     z-index: -2;
+    width: 100%;
     & .hero {
       height: 60%;
       width: 100%;

@@ -38,8 +38,8 @@ export const Header = () => {
           <Image
             className={styles.heroImg}
             src="/brian-lundquist-APbQJD8wJLc-unsplash.jpg"
-            width={100}
-            height={100}
+            width={160}
+            height={240}
             alt=""
           />
         </div>
