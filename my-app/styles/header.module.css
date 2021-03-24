@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .header {
   position: relative;
+  min-height: 100vh;
 }
 
 .header nav {
@@ -132,9 +133,10 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 10%;
-  bottom: 10%;
+  top: 0;
+  bottom: 0;
   z-index: -2;
+  width: 100%;
 }
 
 .header .heroSection .hero {
