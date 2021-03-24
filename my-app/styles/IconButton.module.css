@@ -1,0 +1,78 @@
+.IconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.IconContainer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.IconContainer:hover::before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.IconButtonA {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.IconButton {
+  color: black;
+  line-height: 40px;
+  margin: auto auto;
+  padding: 10px;
+}
+
+.IconButton:hover {
+  color: white;
+}
+
+.faFacebook_style {
+  background-color: royalblue;
+}
+
+.faCamera_style {
+  background-color: #d624aa;
+}
+
+.faTwitter_style {
+  background-color: #00aced;
+}
+
+.faEnvelope_style {
+  background-color: #39b82e;
+}
+
+.faYoutube_style {
+  background-color: #e93838;
+}
+/*# sourceMappingURL=IconButton.module.css.map */

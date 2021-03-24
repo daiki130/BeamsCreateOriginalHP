@@ -16,7 +16,6 @@ export default function Home() {
           padding: 0;
           box-sizing: border-box;
           list-style: none;
-          cursor: none;
           overflow-x: hidden;
         }
         a {

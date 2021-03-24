@@ -1,0 +1,63 @@
+.IconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  &:hover {
+    &::before {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+  }
+}
+.IconButtonA {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.IconButton {
+  color: black;
+  line-height: 40px;
+  margin: auto auto;
+  padding: 10px;
+  &:hover {
+    color: white;
+  }
+}
+.faFacebook_style {
+  background-color: royalblue;
+}
+.faCamera_style {
+  background-color: rgb(214, 36, 170);
+}
+.faTwitter_style {
+  background-color: rgba(0, 172, 237, 1);
+}
+.faEnvelope_style {
+  background-color: rgb(57, 184, 46);
+}
+.faYoutube_style {
+  background-color: rgb(233, 56, 56);
+}
