@@ -11,31 +11,23 @@ const Icons = [faFacebook, faCamera, faTwitter, faEnvelope, faYoutube];
 export const IconButtons = () => {
   return (
     <>
-      <li className={`${styles.IconContainer} ${styles.faFacebook_style}`}>
-        <a href="#" className={styles.IconButtonA}>
-          <FontAwesomeIcon icon={Icons[0]} className={styles.IconButton} />
-        </a>
-      </li>
-      <li className={`${styles.IconContainer} ${styles.faCamera_style}`}>
-        <a href="#" className={styles.IconButtonA}>
-          <FontAwesomeIcon icon={Icons[1]} className={styles.IconButton} />
-        </a>
-      </li>
-      <li className={`${styles.IconContainer} ${styles.faTwitter_style}`}>
-        <a href="#" className={styles.IconButtonA}>
-          <FontAwesomeIcon icon={Icons[2]} className={styles.IconButton} />
-        </a>
-      </li>
-      <li className={`${styles.IconContainer} ${styles.faEnvelope_style}`}>
-        <a href="#" className={styles.IconButtonA}>
-          <FontAwesomeIcon icon={Icons[3]} className={styles.IconButton} />
-        </a>
-      </li>
-      <li className={`${styles.IconContainer} ${styles.faYoutube_style}`}>
-        <a href="#" className={styles.IconButtonA}>
-          <FontAwesomeIcon icon={Icons[4]} className={styles.IconButton} />
-        </a>
-      </li>
+      {Icons.map((icon) => (
+        <li
+          key={icon}
+          className={`
+          ${styles.IconContainer}
+          ${icon === faFacebook ? styles.faFacebook_style : ""}
+          ${icon === faCamera ? styles.faCamera_style : ""}
+          ${icon === faTwitter ? styles.faTwitter_style : ""}
+          ${icon === faEnvelope ? styles.faEnvelope_style : ""}
+          ${icon === faYoutube ? styles.faYoutube_style : ""}
+        `}
+        >
+          <a href="#" className={styles.IconButtonA}>
+            <FontAwesomeIcon icon={icon} className={styles.IconButton} />
+          </a>
+        </li>
+      ))}
     </>
   );
 };
