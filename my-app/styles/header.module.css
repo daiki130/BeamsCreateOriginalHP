@@ -20,20 +20,10 @@
   margin-top: 2rem;
 }
 
-.header nav #logo {
+.header nav .logo {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  font-size: 24px;
-  font-family: "Martel", serif;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  width: 6.5rem;
-  margin: auto auto auto 0;
-}
-
-.header nav a {
-  text-decoration: none;
 }
 
 .header nav .gridColumn {
@@ -42,7 +32,6 @@
   -ms-grid-column-align: center;
       justify-self: center;
   color: burlywood;
-  margin-top: 1em;
   font-weight: bold;
   white-space: nowrap;
   /* 改行を強制的に禁止する */

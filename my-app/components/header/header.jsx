@@ -5,14 +5,9 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <nav>
-        <Image
-          id="logo"
-          src="/BEAMS.png"
-          width="63"
-          height="104"
-          style={{ width: "6.5rem", height: "60px" }}
-          alt="BEAMS_LOGO"
-        />
+        <div className={styles.logo}>
+          <Image src="/BEAMS.png" width="104" height="63" alt="BEAMS_LOGO" />
+        </div>
         <a href="#" className={styles.gridColumn}>
           FEATURES
         </a>

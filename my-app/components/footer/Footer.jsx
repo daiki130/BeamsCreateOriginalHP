@@ -3,6 +3,13 @@ import Image from "next/image";
 import { IconButtons } from "./IconButtons";
 
 export const Footer = () => {
+  const footerLists = [
+    "サイトマップ",
+    "プライバシーポリシー",
+    "サイトご利用規約",
+    "お問い合わせ",
+    "BEAMS公式ショップ",
+  ];
   return (
     <StyledFooter>
       <StyledFooterContainer>
@@ -11,21 +18,11 @@ export const Footer = () => {
         </StyledFooterLogo>
         <StyledFooterList>
           <ul>
-            <li>
-              <a href="#">サイトマップ</a>
-            </li>
-            <li>
-              <a href="#">プライバシーポリシー</a>
-            </li>
-            <li>
-              <a href="#">サイトご利用規約</a>
-            </li>
-            <li>
-              <a href="#">お問い合わせ</a>
-            </li>
-            <li>
-              <a href="#">BEAMS公式ショップ</a>
-            </li>
+            {footerLists.map((list) => (
+              <li key={list}>
+                <a href="#">{list}</a>
+              </li>
+            ))}
           </ul>
         </StyledFooterList>
         <StyledFooterIcons>

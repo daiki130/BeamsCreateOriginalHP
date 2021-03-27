@@ -11,23 +11,14 @@
     width: 100%;
     z-index: 10;
     margin-top: 2rem;
-    & #logo {
+    & .logo {
       grid-column: 2/3;
-      font-size: 24px;
-      font-family: "Martel", serif;
-      justify-self: start;
-      width: 6.5rem;
-      margin: auto auto auto 0;
-    }
-    & a {
-      text-decoration: none;
     }
     & .gridColumn {
       font-family: "Martel", serif;
       font-size: 1rem;
       justify-self: center;
       color: burlywood;
-      margin-top: 1em;
       font-weight: bold;
       white-space: nowrap; /* 改行を強制的に禁止する */
       &:nth-of-type(1) {
