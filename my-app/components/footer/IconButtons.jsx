@@ -11,9 +11,9 @@ const Icons = [faFacebook, faCamera, faTwitter, faEnvelope, faYoutube];
 export const IconButtons = () => {
   return (
     <>
-      {Icons.map((icon) => (
+      {Icons.map((icon, index) => (
         <li
-          key={icon}
+          key={index}
           className={`
           ${styles.IconContainer}
           ${icon === faFacebook ? styles.faFacebook_style : ""}

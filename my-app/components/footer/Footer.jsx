@@ -18,8 +18,8 @@ export const Footer = () => {
         </StyledFooterLogo>
         <StyledFooterList>
           <ul>
-            {footerLists.map((list) => (
-              <li key={list}>
+            {footerLists.map((list, index) => (
+              <li key={index}>
                 <a href="#">{list}</a>
               </li>
             ))}
