@@ -1,6 +1,8 @@
 import styles from "../../styles/header.module.css";
 import Image from "next/image";
 
+const GRIDCOLUMNS = ["FEATURES", "NEWS", "RANKING", "PRE ORDER"];
+
 export const Header = () => {
   return (
     <header className={styles.header}>
@@ -8,18 +10,13 @@ export const Header = () => {
         <div className={styles.logo}>
           <Image src="/BEAMS.png" width="104" height="63" alt="BEAMS_LOGO" />
         </div>
-        <a href="#" className={styles.gridColumn}>
-          FEATURES
-        </a>
-        <a href="#" className={styles.gridColumn}>
-          NEWS
-        </a>
-        <a href="#" className={styles.gridColumn}>
-          RANKING
-        </a>
-        <a href="#" className={styles.gridColumn}>
-          PRE ORDER
-        </a>
+        {GRIDCOLUMNS.map((gridColumn, index) => {
+          return (
+            <a key={index} href="#" className={styles.gridColumn}>
+              {gridColumn}
+            </a>
+          );
+        })}
         <div className={styles.mobileMenu}>
           <button className={styles.mobileMenuBtn}>
             <span></span>
